@@ -1,0 +1,356 @@
+{
+  "name": "gurobi",
+  "description": "",
+  "parameters": {
+    "BranchDir": {
+      "type": "categorical",
+      "range": [
+        "-1",
+        "0",
+        "1"
+      ],
+      "default": "0"
+    },
+    "DegenMoves": {
+      "type": "integer",
+      "range": [
+        -1,
+        2000000000
+      ],
+      "default": -1
+    },
+    "Disconnected": {
+      "type": "categorical",
+      "range": [
+        "-1",
+        "0",
+        "1",
+        "2"
+      ],
+      "default": "-1"
+    },
+    "Heuristics": {
+      "type": "real",
+      "range": [
+        0.0,
+        1.0
+      ],
+      "default": 0.05
+    },
+    "NodeMethod": {
+      "type": "categorical",
+      "range": [
+        "-1",
+        "0",
+        "1",
+        "2"
+      ],
+      "default": "-1"
+    },
+    "Method": {
+      "type": "categorical",
+      "range": [
+        "-1",
+        "0",
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "default": "-1"
+    },
+    "PartitionPlace": {
+      "type": "integer",
+      "range": [
+        0,
+        31
+      ],
+      "default": 15
+    },
+    "Symmetry": {
+      "type": "categorical",
+      "range": [
+        "-1",
+        "0",
+        "1",
+        "2"
+      ],
+      "default": "-1"
+    },
+    "VarBranch": {
+      "type": "categorical",
+      "range": [
+        "-1",
+        "0",
+        "1",
+        "2",
+        "3"
+      ],
+      "default": "-1"
+    },
+    "Cuts": {
+      "type": "categorical",
+      "range": [
+        "-1",
+        "0",
+        "1",
+        "2",
+        "3"
+      ],
+      "default": "-1"
+    },
+    "CliqueCuts": {
+      "type": "categorical",
+      "range": [
+        "-1",
+        "0",
+        "1",
+        "2"
+      ],
+      "default": "-1"
+    },
+    "CoverCuts": {
+      "type": "categorical",
+      "range": [
+        "-1",
+        "0",
+        "1",
+        "2"
+      ],
+      "default": "-1"
+    },
+    "FlowCoverCuts": {
+      "type": "categorical",
+      "range": [
+        "-1",
+        "0",
+        "1",
+        "2"
+      ],
+      "default": "-1"
+    },
+    "FlowPathCuts": {
+      "type": "categorical",
+      "range": [
+        "-1",
+        "0",
+        "1",
+        "2"
+      ],
+      "default": "-1"
+    },
+    "GUBCoverCuts": {
+      "type": "categorical",
+      "range": [
+        "-1",
+        "0",
+        "1",
+        "2"
+      ],
+      "default": "-1"
+    },
+    "ImpliedCuts": {
+      "type": "categorical",
+      "range": [
+        "-1",
+        "0",
+        "1",
+        "2"
+      ],
+      "default": "-1"
+    },
+    "MIPSepCuts": {
+      "type": "categorical",
+      "range": [
+        "-1",
+        "0",
+        "1",
+        "2"
+      ],
+      "default": "-1"
+    },
+    "MIRCuts": {
+      "type": "categorical",
+      "range": [
+        "-1",
+        "0",
+        "1",
+        "2"
+      ],
+      "default": "-1"
+    },
+    "MIPFocus": {
+      "type": "categorical",
+      "range": [
+        "0",
+        "1",
+        "2",
+        "3"
+      ],
+      "default": "0"
+    },
+    "StrongCGCuts": {
+      "type": "categorical",
+      "range": [
+        "-1",
+        "0",
+        "1",
+        "2"
+      ],
+      "default": "-1"
+    },
+    "ModKCuts": {
+      "type": "categorical",
+      "range": [
+        "-1",
+        "0",
+        "1",
+        "2"
+      ],
+      "default": "-1"
+    },
+    "NetworkCuts": {
+      "type": "categorical",
+      "range": [
+        "-1",
+        "0",
+        "1",
+        "2"
+      ],
+      "default": "-1"
+    },
+    "ProjImpliedCuts": {
+      "type": "categorical",
+      "range": [
+        "-1",
+        "0",
+        "1",
+        "2"
+      ],
+      "default": "-1"
+    },
+    "SubMIPCuts": {
+      "type": "categorical",
+      "range": [
+        "-1",
+        "0",
+        "1",
+        "2"
+      ],
+      "default": "-1"
+    },
+    "ZeroHalfCuts": {
+      "type": "categorical",
+      "range": [
+        "-1",
+        "0",
+        "1",
+        "2"
+      ],
+      "default": "-1"
+    },
+    "InfProofCuts": {
+      "type": "categorical",
+      "range": [
+        "-1",
+        "0",
+        "1",
+        "2"
+      ],
+      "default": "-1"
+    },
+    "CutPasses": {
+      "type": "integer",
+      "range": [
+        -1,
+        2000000000
+      ],
+      "default": -1
+    },
+    "GomoryPasses": {
+      "type": "integer",
+      "range": [
+        -1,
+        2000000000
+      ],
+      "default": -1
+    },
+    "ImproveStartGap": {
+      "type": "ordinal",
+      "range": [
+        "0",
+        "0.1",
+        "0.2",
+        "0.3",
+        "0.4",
+        "0.5",
+        "0.6",
+        "0.7",
+        "0.8",
+        "0.9",
+        "1"
+      ],
+      "default": "0"
+    },
+    "RINS": {
+      "type": "integer",
+      "range": [
+        -1,
+        2000000000
+      ],
+      "default": -1
+    },
+    "SubMIPNodes": {
+      "type": "integer",
+      "range": [
+        -1,
+        2000000000
+      ],
+      "default": 500
+    },
+    "Presolve": {
+      "type": "categorical",
+      "range": [
+        "-1",
+        "0",
+        "1",
+        "2"
+      ],
+      "default": "-1"
+    },
+    "PrePasses": {
+      "type": "integer",
+      "range": [
+        -1,
+        2000000000
+      ],
+      "default": -1
+    },
+    "Aggregate": {
+      "type": "categorical",
+      "range": [
+        "0",
+        "1"
+      ],
+      "default": "1"
+    },
+    "AggFill": {
+      "type": "integer",
+      "range": [
+        -1,
+        2000000000
+      ],
+      "default": -1
+    },
+    "PreSparsify": {
+      "type": "categorical",
+      "range": [
+        "-1",
+        "0",
+        "1"
+      ],
+      "default": "-1"
+    }
+  }
+}
